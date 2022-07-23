@@ -1,273 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>checkout page</title>
-    <style>
-      body {
-        margin: 0px;
-        padding: 0px;
-      }
 
-      #page {
-        display: flex;
-        width: 100%;
-        border: red;
-      }
-      #parent {
-        width: 50%;
-        height: 100%;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        margin: auto;
-        line-height: 50px;
-        margin-left: 0px;
-      }
-      #parent > #base {
-        margin-left: 130px;
-        margin-right: 30px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>checkout page</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
 
-      #sum {
-        display: flex;
-        width: 30%;
-        height:1150px ;
-        background-color: rgb(254, 251, 251);
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        margin: auto;
-        line-height: 80px;
-        margin-left: 10px;
-        margin-right: 150px;
-        margin-top: 5px;
-      }
+    #page {
+      display: flex;
+      width: 100%;
+      /* border: red; */
+    }
 
-      #long {
-        
-        border-radius: 10px;
-        
-      }
-      #long > img {
-        width: 20%;
-        margin-left: 40px;
-        margin-top: 40px;
-        border-radius: 10px;
-      }
+    #parent {
+      width: 50%;
+      height: 100%;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      margin: auto;
+      line-height: 50px;
+      margin-left: 0px;
+    }
 
-      #long > p {
-        margin-left: 20px;
-      }
-      #logo {
-        display: grid;
-        justify-content: center;
-      }
+    #parent>#base {
+      margin-left: 130px;
+      margin-right: 30px;
+    }
 
-      #logo > p {
-        text-align: center;
-      }
-      #bag {
-        display: flex;
-        width: 80%;
-        height: 70px;
+    #sum {
+      display: flex;
+      width: 30%;
+      height: 1150px;
+      background-color: rgb(211, 209, 209);
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      margin: auto;
+      line-height: 80px;
+      margin-left: 10px;
+      margin-right: 150px;
+      margin-top: 5px;
+    }
 
-        margin: auto;
-        text-align: center;
-        margin-left: 100px;
-      }
-      #bag > p {
-        margin-top: 0px;
-        padding: 10px;
-      }
+    #long {
 
-      #num1{
-        display: flex;
-        /* margin-left: 20px; */
-      }
-      #num2{
-        display: flex;
-        /* margin-left: 20px; */
-      }
-      #num3{
-        display: flex;
-        /* margin-left: 20px; */
-      }
+      border-radius: 10px;
 
-      #num1>div{
-       
-        margin-left: 30px;
-      }
-      #num1>div:nth-child(2){
-        margin-left: 250px;
-      }
-      #num2>div{
-  
-        margin-left: 30px;
-      }
-      #num2>div:nth-child(2){
-        margin-left: 200px;
-      }
-      #num3>h3{
-       
-        margin-left: 20px;
-      }
-      #num3>h4{
-       
-       margin-left: 280px;
-     }
-      
-      #logo img {
-        width: 100%;
-        height: 80px;
-        margin-top: 60px;
-      }
+    }
 
-      input[type="submit"] {
-        background-color: black;
-        color: white;
+    #long>img {
+      width: 20%;
+      margin-left: 40px;
+      margin-top: 40px;
+      border-radius: 10px;
+    }
 
-        cursor: pointer;
-        border-radius: 10px;
-        font-size: 20px;
-        margin-top: 20px;
+    #long>p {
+      margin-left: 20px;
+    }
 
-        height: 50px;
-      }
+    #logo {
+      display: grid;
+      justify-content: center;
+    }
 
-      input[type="text"],
-      input[type="password"],
-      input[type="submit"],
-      input[type="number"] {
-        width: 80%;
-        height: 35px;
-        align-items: center;
-        margin-left: 30px;
-        padding: 5px;
-        border-radius: 5px;
-        margin-bottom: 20px;
-      }
-      label {
-        margin-left: 35px;
-      }
+    #logo>p {
+      text-align: center;
+    }
 
-      input[type="checkbox"] {
-        margin-left: 40px;
-      }
-      #Country {
-        width: 81%;
-        margin-left: 32px;
-        padding: 12px;
-        margin-bottom: 20px;
-      }
+    #bag {
+      display: flex;
+      width: 80%;
+      height: 70px;
 
-      #name1,
-      #name2,
-      #discount {
-        width: 36%;
-      }
-      #city,
-      #state,
-      #pincode {
-        width: 21%;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="page">
-      <div id="parent">
-        <div id="logo">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO_96ac9306-4c81-4ab8-8d2b-4e818eed7f76_2048x.png?v=1606482289"
-            alt="logo"
-          />
-          <p>Cart > Information > Shipping > Payment</p>
-        </div>
-        <div id="base">
-          <form>
-            <label for="">Contact information</label><br />
-            <input type="text" placeholder="Enter Email" id="Email" />
-            <br />
-            <input type="checkbox" id="inform" name="inform" value="inform" />
-            <label for="inform">Email me with news and offers</label>
-            <br />
-            <label for="">Shipping address</label>
-            <br />
-            <select id="Country">
-              <option value="India">India</option>
-              <option value="America">America</option>
-            </select>
-            <br />
-            <input id="name1" type="text" placeholder="Enter first name" />
-            <input id="name2" type="text" placeholder="Enter last name" /><br />
-            <input
-              id="company"
-              type="text"
-              placeholder="Company(optional)"
-            /><br />
-            <input id="address1" type="text" placeholder="Address" /><br />
-            <input
-              id="address2"
-              type="text"
-              placeholder="Apartment,suits,etc.(optional)"
-            /><br />
-            <input id="city" type="text" placeholder="City" />
-            <input id="state" type="text" placeholder="State" />
-            <input id="pincode" type="number" placeholder="PIN code" /><br />
-            <input id="phone" type="number" placeholder="phone" /><br />
+      margin: auto;
+      text-align: center;
+      margin-left: 100px;
+    }
 
-            <input type="checkbox" id="inform" name="inform" value="inform" />
-            <label for="inform">Save this information for next time</label>
-            <br />
+    #bag>p {
+      margin-top: 0px;
+      padding: 10px;
+    }
 
-            <input type="submit" value="Countinue to shopping" />
+    #num1 {
+      display: flex;
 
-            <hr />
-            <div id="bag">
-              <p>Refund policy</p>
-              <p>privacy policy</p>
-              <p>Terms of service</p>
-            </div>
-          </form>
-        </div>
+    }
+
+    #num2 {
+      display: flex;
+
+    }
+
+    #num3 {
+      display: flex;
+
+    }
+
+    #num1>div {
+
+      margin-left: 30px;
+    }
+
+    #num1>div:nth-child(2) {
+      margin-left: 250px;
+    }
+
+    #num2>div {
+
+      margin-left: 30px;
+    }
+
+    #num2>div:nth-child(2) {
+      margin-left: 200px;
+    }
+
+    #num3>h3 {
+
+      margin-left: 20px;
+    }
+
+    #num3>h4 {
+
+      margin-left: 280px;
+    }
+
+    #logo img {
+      width: 100%;
+      height: 80px;
+      margin-top: 60px;
+    }
+
+    input[type="submit"] {
+      background-color: black;
+      color: white;
+
+      cursor: pointer;
+      border-radius: 10px;
+      font-size: 20px;
+      margin-top: 20px;
+
+      height: 50px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"],
+    input[type="number"] {
+      width: 80%;
+      height: 35px;
+      align-items: center;
+      margin-left: 30px;
+      padding: 5px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      margin-left: 35px;
+    }
+
+    input[type="checkbox"] {
+      margin-left: 40px;
+    }
+
+    #Country {
+      width: 81%;
+      margin-left: 32px;
+      padding: 12px;
+      margin-bottom: 20px;
+    }
+
+    #name1,
+    #name2,
+    #discount {
+      width: 36%;
+    }
+
+    #city,
+    #state,
+    #pincode {
+      width: 21%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="page">
+    <div id="parent">
+      <div id="logo">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO_96ac9306-4c81-4ab8-8d2b-4e818eed7f76_2048x.png?v=1606482289"
+          alt="logo" />
+        <p>Cart > Information > Shipping > Payment</p>
       </div>
-      <div id="sum">
-        <div id="long">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/What_s-In-The-Bag-1_914eb815-9c7e-4ca1-ad10-39708a1afb45_2048x.png?v=1656613248"
-            alt=""
-          />
-          <p>The Beauty Bundle July Fab Bag</p>
-          <p>₹1,797.00</p>
-          <hr />
-          <input id="discount" type="text" placeholder="Discount Code" />
-          <input type="submit" value="Apply" />
-          <hr />
+      <div id="base">
+        <form>
+          <label for="">Contact information</label><br />
+          <input type="text" placeholder="Enter Email" id="Email" />
+          <br />
+          <input type="checkbox" id="inform" name="inform" value="inform" />
+          <label for="inform">Email me with news and offers</label>
+          <br />
+          <label for="">Shipping address</label>
+          <br />
+          <select id="Country">
+            <option value="India">India</option>
+            <option value="America">America</option>
+          </select>
+          <br />
+          <input id="name1" type="text" placeholder="Enter first name" />
+          <input id="name2" type="text" placeholder="Enter last name" /><br />
+          <input id="company" type="text" placeholder="Company(optional)" /><br />
+          <input id="address1" type="text" placeholder="Address" /><br />
+          <input id="address2" type="text" placeholder="Apartment,suits,etc.(optional)" /><br />
+          <input id="city" type="text" placeholder="City" />
+          <input id="state" type="text" placeholder="State" />
+          <input id="pincode" type="number" placeholder="PIN code" /><br />
+          <input id="phone" type="number" placeholder="phone" /><br />
 
-          <div id ="num1">
-            <div>Subtotal :-</div>
-            <div>₹1,797.00</div>
-          </div>
-          <div id ="num2">
-            <div>Shipping:-</div>
-            <div>Calculated at next step</div>
-          </div>
+          <input type="checkbox" id="inform" name="inform" value="inform" />
+          <label for="inform">Save this information for next time</label>
+          <br />
+
+          <input type="submit" value="Countinue to shopping" />
+
           <hr />
-
-          <div id ="num3">
-            <h3>Total</h3>
-            <h4>INR ₹1,797.00</h4>
+          <div id="bag">
+            <p>Refund policy</p>
+            <p>privacy policy</p>
+            <p>Terms of service</p>
           </div>
-
-        </div>
+        </form>
       </div>
     </div>
-  </body>
+    <div id="sum">
+      <div id="long">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/What_s-In-The-Bag-1_914eb815-9c7e-4ca1-ad10-39708a1afb45_2048x.png?v=1656613248"
+          alt="" />
+        <p>The Beauty Bundle July Fab Bag</p>
+        <p>Quantity:-1</p>
+        <p>Rs. 599.00</p>
+        
+        <hr />
+        <input id="discount" type="text" placeholder="masai10%"/>
+        <input type="submit" value="Apply" onclick="show_apply_alert();" alt=""/>
+        <hr />
+
+        <div id="num1">
+          <div>Subtotal :-</div>
+          <div>Rs. 599.00</div>
+        </div>
+        <div id="num2">
+          <div>Shipping:-</div>
+          <div>Calculated at next step</div>
+        </div>
+        <hr />
+
+        <div id="num3">
+          <h3>Total</h3>
+          <h4>INR Rs. 599.00</h4>
+        </div>
+        <form action="">
+        <input type="submit" value="Payment" onclick="show_alert();" alt=""  />
+      </form>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
 <script>
   let form = document.querySelector("form");
   let checkoutLS = JSON.parse(localStorage.getItem("checkout")) || [];
-
+  
   form.addEventListener("submit", function (event) {
     event.preventDefault();
+    
 
     let obj = {
       Email: form.Email.value,
@@ -280,6 +294,7 @@
       state: form.state.value,
       pincode: form.pincode.value,
       phone: form.phone.value,
+      
     };
 
     if (
@@ -292,15 +307,24 @@
       obj.city == "" ||
       obj.state == "" ||
       obj.pincode == "" ||
-      obj.phone == ""
+      obj.phone == "" 
+      
     ) {
       alert("data saved");
-      window.location.href = "homepage.html";
+      window.location.href = "index.html";
     }
     checkoutLS.push(obj);
     console.log(obj);
 
     localStorage.setItem("checkout", JSON.stringify(checkoutLS));
   });
-</script>
 
+
+function show_apply_alert(){
+  alert("discount Apply")
+}
+
+  function show_alert() {
+  alert("Payment Done Successfully ");
+}
+</script>
