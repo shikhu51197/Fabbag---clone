@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://kit.fontawesome.com/777c85ebe0.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup page</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+
+    }
+
+    form {
+      width: 25%;
+      height: 550px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      margin: auto;
+      margin-top: 30px;
+      border-radius: 10px;
+      line-height: 50px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 30px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="number"] {
+      width: 80%;
+      height: 35px;
+      align-items: center;
+      margin-left: 30px;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    label {
+      margin-left: 35px;
+    }
+
+    .bottom {
+      margin-left: 100px;
+    }
+
+    input[type="submit"] {
+      background-color: #e5b95f;
+      padding: 12px 20px;
+      cursor: pointer;
+      width: 85%;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-left: 30px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: black;
+    }
+
+    #parent {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      background-color: white;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+
+    #parent>h2 {
+      padding-left: 20px;
+      padding-top: 25px;
+    }
+
+    h2 {
+      color: rgb(221, 169, 27);
+      font-size: 18px;
+      margin: 0px 17px 25px 0px;
+    }
+
+    #parent>#search>i {
+      color: #e5b95f;
+      padding-right: 15px;
+      padding-top: 30px;
+      margin: auto;
+    }
+
+    #parent>#user>i {
+      color: #e5b95f;
+      padding-right: 15px;
+      padding-top: 30px;
+    }
+
+    #parent>#wishlist>i {
+      color: #e5b95f;
+      padding-right: 15px;
+      padding-top: 30px;
+    }
+
+    #parent>#cart>i {
+      color: #e5b95f;
+      padding-right: 15px;
+      margin-top: 30px;
+    }
+
+    #logo {
+      display: grid;
+      justify-content: center;
+      margin: auto;
+    }
+
+    #logo img {
+      width: auto;
+      height: 50px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .black {
+      width: 100%;
+      height: 50px;
+      background-color: black;
+      margin-top: 0px;
+      padding-top: 0px;
+    }
+
+    h4 {
+      color: white;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    @media screen and (max-width: 300px) {
+      span.bottom {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+      }
+    }
+
+    #fotter1 {
+      display: flex;
+      width: 100%;
+      height: 450px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      margin-top: 100px;
+
+    }
+
+    #fotter1>div {
+      width: 30%;
+      height: 100%;
+    }
+
+    #fotter1>div>p {
+      font-size: 20px;
+      text-align: left;
+      margin-left: 150px;
+      color: gray;
+    }
+
+    #fotter1>div>h3 {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    #subscribe {
+      display: flex;
+    }
+
+    #subscribe>input[type="text"] {
+      width: 50%;
+      margin-left: 130px;
+    }
+
+    #subscribe>button {
+      margin-left: 10px;
+      background-color: #e5b95f;
+      color: aliceblue;
+      border: 0px;
+      border-radius: 10px;
+    }
+
+    #innerdiv {
+      display: flex;
+      margin-left: 180px;
+      margin-top: 100px;
+
+    }
+
+    #innerdiv>i {
+      color: gray;
+      margin-left: 20px;
+    }
+
+    #logo1>p {
+      font-size: 20px;
+      color: gray;
+      margin-left: 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="black">
+    <h4>AVAILABLE NOW- THE BEAUTY BUNDLE JULY FAB BAG!</h4>
+  </div>
+
+  <div id="parent">
+    <h2>SUBSCRIBE NOW</h2>
+
+    <div id="logo">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO_96ac9306-4c81-4ab8-8d2b-4e818eed7f76_2048x.png?v=1606482289"
+        alt="logo" />
+    </div>
+
+    <div id="user"><i class="fa-solid fa-circle-user"></i></div>
+    <div id="search"><i class="fa-brands fa-searchengin"></i></div>
+    <div id="wishlist"><i class="fa-solid fa-heart"></i></div>
+    <div id="cart"><i class="fa-solid fa-cart-arrow-down"></i></div>
+  </div>
+
+  <form>
+    <p><b>Signup</b></p>
+
+    <label for="">First Name</label><br />
+    <input id="name1" type="text" placeholder="Enter first name" /><br />
+    <label for="">Last Name</label><br />
+    <input id="name2" type="text" placeholder="Enter last name" /><br />
+    <label for="">Email Address</label><br />
+    <input id="Email" type="text" placeholder="Your Email Address" /><br />
+    <label for="">Password</label><br />
+    <input id="Password" type="password" placeholder="Your Password" /><br />
+    <input type="submit" value="Signup" />
+    <br />
+    <span class="bottom">
+      Already have an account?
+      <a href="login.html" target="_black">Sign In</a>
+    </span>
+  </form>
+  <div id="fotter1">
+    <div>
+      <h3>INFORMATION</h3>
+      <p>About us</p>
+      <p>FAQ</p>
+      <p>Collaborate with Fab Bag</p>
+      <p>Contact us</p>
+      <p>Return & condition</p>
+      <p>terms and conditions </p>
+      <p>Private policy</p>
+      <p></p>
+    </div>
+    <div>
+      <h3>CUSTOMER CARE</h3>
+      <p>Call: 022-6805-1234
+      <p>(Monday to Friday : 9 AM - 7 PM).</p>
+      </p>
+      <p>MAIL: crew@fabbabg.com</p>
+      <br>
+      <div id="logo1">
+        <div id="innerdiv">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+
+
+        <P>Copyright © 2021 fabbag.com All rights reserved.</P>
+      </div>
+    </div>
+    <div>
+      <h3>NEWSLETTER</h3>
+      <div id="subscribe">
+        <input type="text" placeholder="Enter your Email;" name="search" />
+        <button type="submit"> SUBSCRIBE</button>
+      </div>
+
+      <p>Don’t worry we don’t spam</p>
+    </div>
+
+
+  </div>
+
+
+  <script>
+    let form = document.querySelector("form");
+    let signupLS = JSON.parse(localStorage.getItem("signup")) || [];
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      let obj = {
+        name1: form.name1.value,
+        name2: form.name2.value,
+        Email: form.Email.value,
+        Password: form.Password.value,
+      };
+
+      if (
+        obj.Email == "" ||
+        obj.name1 == "" ||
+        obj.name2 == "" ||
+        obj.Password == ""
+      ) {
+        alert("please fill the complete details");
+        return;
+      }
+      signupLS.push(obj);
+      console.log(obj);
+
+      localStorage.setItem("signup", JSON.stringify(signupLS));
+      window.location.href = "login.html";
+    });
+  </script>
+</body>
+
+<<<<<<< HEAD
+</html>
+=======
+        localStorage.setItem("signup", JSON.stringify(signupLS));
+        window.location.href = "login.html";
+      });
+    </script>
+  </body>
+</html>
+
+>>>>>>> 4d815d3c611e2ef7da48a5ab4fda9ab3c9293bb3

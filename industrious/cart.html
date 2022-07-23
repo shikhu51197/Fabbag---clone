@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/777c85ebe0.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart page</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        #parent {
+            width: auto;
+            margin: auto;
+            display: flex;
+            background-color: white;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+        #parent>h2 {
+            padding-left: 20px;
+            padding-top: 25px;
+        }
+
+        h2 {
+            color: rgb(221, 169, 27);
+            font-size: 18px;
+            margin: 0px 17px 25px 0px;
+        }
+
+        #parent>#search>i {
+            color: #e5b95f;
+            padding-right: 15px;
+            padding-top: 30px;
+            margin: auto;
+        }
+
+        #parent>#user>i {
+            color: #e5b95f;
+            padding-right: 15px;
+            padding-top: 30px;
+        }
+
+        #parent>#wishlist>i {
+            color: #e5b95f;
+            padding-right: 15px;
+            padding-top: 30px;
+        }
+
+        #parent>#cart>i {
+            color: #e5b95f;
+            padding-right: 15px;
+            margin-top: 30px;
+        }
+
+        #logo {
+            display: grid;
+            justify-content: center;
+            margin: auto;
+        }
+
+        #logo img {
+            width: auto;
+            height: 50px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .black {
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+
+        h4 {
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        #fotter1 {
+            display: flex;
+            width: 100%;
+            height: 450px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            margin-top: 100px;
+
+        }
+
+        #fotter1>div {
+            width: 30%;
+            height: 100%;
+        }
+
+        #fotter1>div>p {
+            font-size: 20px;
+            text-align: left;
+            margin-left: 150px;
+            color: gray;
+        }
+
+        #fotter1>div>h3 {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        #subscribe {
+            display: flex;
+        }
+
+        #subscribe>input[type="text"] {
+            width: 50%;
+            margin-left: 130px;
+        }
+
+        #subscribe>button {
+            margin-left: 10px;
+            background-color: #e5b95f;
+            color: aliceblue;
+            border: 0px;
+            border-radius: 10px;
+        }
+
+        #innerdiv {
+            display: flex;
+            margin-left: 180px;
+            margin-top: 100px;
+
+        }
+
+        #innerdiv>i {
+            color: gray;
+            margin-left: 20px;
+        }
+
+        #logo1>p {
+            font-size: 20px;
+            color: gray;
+            margin-left: 80px;
+        }
+
+        #card {
+            display: flex;
+            /* border: 5px solid red; */
+            width: 80%;
+            margin: auto;
+            margin-top: 60px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+        .img-zoom-lens {
+            position: absolute;
+            border: 1px solid #d4d4d4;
+            /*set the size of the lens:*/
+            width: 40px;
+            height: 30px;
+
+        }
+
+        .img-zoom-result {
+            border: 1px solid #131212;
+            /*set the size of the result div:*/
+            width: 400px;
+            height: 250px;
+            margin: auto;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+
+        }
+
+        #myimage {
+            margin-left: 20px;
+            margin-top: 30px;
+            border: solid black;
+            width: 80%;
+            height: 300px;
+        }
+
+        #information {
+            /* border: 5px solid red; */
+            width: 60%;
+            margin: auto;
+            margin-top: 60px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            
+        }
+
+        #information>#statement {
+            
+            color: black;
+            text-align: center;
+        }
+
+        #template1 {
+
+            width: 50%;
+        }
+
+        #template2 {
+
+            /* border:4px solid black  ;  */
+            text-align: left;
+            width: 70%;
+            margin: auto;
+            margin-top: 80px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+
+        }
+        #template2>h3{
+            color: rgb(226, 20, 20);
+        }
+
+        .button {
+            background-color:black;
+            border: 2px solid black;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            margin: 10px 0px;
+            cursor: pointer;
+            width: 90%;
+            border-radius: 5px;
+            
+        }
+       
+        
+    </style>
+    <script>
+        function imageZoom(imgID, resultID) {
+            var img, lens, result, cx, cy;
+            img = document.getElementById(imgID);
+            result = document.getElementById(resultID);
+            /*create lens:*/
+            lens = document.createElement("DIV");
+            lens.setAttribute("class", "img-zoom-lens");
+            /*insert lens:*/
+            img.parentElement.insertBefore(lens, img);
+            /*calculate the ratio between result DIV and lens:*/
+            cx = result.offsetWidth / lens.offsetWidth;
+            cy = result.offsetHeight / lens.offsetHeight;
+            /*set background properties for the result DIV:*/
+            result.style.backgroundImage = "url('" + img.src + "')";
+            result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+            /*execute a function when someone moves the cursor over the image, or the lens:*/
+            lens.addEventListener("mousemove", moveLens);
+            img.addEventListener("mousemove", moveLens);
+            /*and also for touch screens:*/
+            lens.addEventListener("touchmove", moveLens);
+            img.addEventListener("touchmove", moveLens);
+            function moveLens(e) {
+                var pos, x, y;
+                /*prevent any other actions that may occur when moving over the image:*/
+                e.preventDefault();
+                /*get the cursor's x and y positions:*/
+                pos = getCursorPos(e);
+                /*calculate the position of the lens:*/
+                x = pos.x - (lens.offsetWidth / 2);
+                y = pos.y - (lens.offsetHeight / 2);
+                /*prevent the lens from being positioned outside the image:*/
+                if (x > img.width - lens.offsetWidth) { x = img.width - lens.offsetWidth; }
+                if (x < 0) { x = 0; }
+                if (y > img.height - lens.offsetHeight) { y = img.height - lens.offsetHeight; }
+                if (y < 0) { y = 0; }
+                /*set the position of the lens:*/
+                lens.style.left = x + "px";
+                lens.style.top = y + "px";
+                /*display what the lens "sees":*/
+                result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+            }
+            function getCursorPos(e) {
+                var a, x = 0, y = 0;
+                e = e || window.event;
+                /*get the x and y positions of the image:*/
+                a = img.getBoundingClientRect();
+                /*calculate the cursor's x and y coordinates, relative to the image:*/
+                x = e.pageX - a.left;
+                y = e.pageY - a.top;
+                /*consider any page scrolling:*/
+                x = x - window.pageXOffset;
+                y = y - window.pageYOffset;
+                return { x: x, y: y };
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="black">
+        <h4>AVAILABLE NOW- THE BEAUTY BUNDLE JULY FAB BAG!</h4>
+    </div>
+
+    <div id="parent">
+        <h2>SUBSCRIBE NOW</h2>
+
+        <div id="logo">
+            <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO_96ac9306-4c81-4ab8-8d2b-4e818eed7f76_2048x.png?v=1606482289"
+                alt="logo" />
+        </div>
+
+        <div id="user"><i class="fa-solid fa-circle-user"></i></div>
+        <div id="search"><i class="fa-brands fa-searchengin"></i></div>
+        <div id="wishlist"><i class="fa-solid fa-heart"></i></div>
+        <div id="cart"><i class="fa-solid fa-cart-arrow-down"></i></div>
+    </div>
+
+   
+
+    <div id="card">
+
+        <div id=template1>
+            <div class="img-zoom-container">
+                <img id="myimage"
+                    src="https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-1.gif?v=1656064858"
+                    width="
+                300" height="240">
+                <div id="myresult" class="img-zoom-result"></div>
+            </div>
+        </div>
+        <div id="template2">
+            <h1>The Beauty Bundle July Fab Bag </h1>
+            <h1>Rs. 599.00</h1>
+            <h3>PLACE YOUR ORDER HERE  - The Beauty Bundle July Fab Bag</h3>
+           
+              
+              <form action="/action_page.php">
+                <label for="quantity">Quantity</label>
+                <br>
+                <br>
+                <input type="number" id="quantity" name="quantity"   value ="1">
+              </form>
+           
+            <div class="goto">
+            
+            <button class="button" onclick="window.location.href = 'checkout.html';">BUY NOW</button>
+           </div>
+            
+                <div id="innerdiv">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+        </div>
+
+    </div>
+
+
+
+   
+    
+
+    <div id="information">
+        <div id="statement">
+
+        <h3>Description</h3>
+        <p><b>Makeup 1: Teen Teen 5D Pretty Eye Shadow (Choose any 1)</b></p>
+        <p>1. Teen Teen 5D Pretty Eye Shadow - Flamingo Pink</p>
+        <p>2. Teen Teen 5D Pretty Eye Shadow - Gold Rush </p>
+        <p>3. Teen Teen 5D Pretty Eye Shadow - Rusty Copper </p>
+
+        
+            <p><b>Beauty Bundle Bag 1 includes:</b></p>
+            <br>
+
+            <p>St. D'vencé Tea Tree Face Wash
+                The Soap Company India Saffron Soothing Sorbet OR The Soap Company India Musk Body Wash
+                Baiser India Nourishing Lip Oil OR Coco Soul Hair & Scalp Cleanser
+                Keeva Naturals Scuba Dive Shower Gel OR Kronoklay Body Butter OR Mom's Therapy Coffee Body Scrub OR
+                Organic Harvest Neem Face Wash OR Plum BodyLovin' Bestsellin' Duo Minis Kit OR Skinlicious Cucumber
+                Beauty Gel for Skin and Hair
+                Tejas Blends Lavender Foot Mist</p>
+        
+
+        <h3>Returns Policy</h3>
+        <p>Returns Policy for FAB BAG Monthly Subscriptions: 100% Happiness or Money-Back Guarantee
+            For more details, please see our Policy here.
+            Should you have any questions regarding this product,
+            please feel free to get in touch with our friendly Customer Experience Team at
+            crew@fabbag.com within 48 hours of receiving the shipment or call us at 022-4896-7878
+            Mon - Fri, 9am - 7pm.</p>
+
+        <h3>Customer Reviews</h3>
+        <P>##product quality is awesome</P>
+        <P>#worth it</P>
+    </div>
+    </div>
+
+
+    <div id="fotter1">
+        <div>
+            <h3>INFORMATION</h3>
+            <p>About us</p>
+            <p>FAQ</p>
+            <p>Collaborate with Fab Bag</p>
+            <p>Contact us</p>
+            <p>Return & condition</p>
+            <p>terms and conditions </p>
+            <p>Private policy</p>
+            <p></p>
+        </div>
+        <div>
+            <h3>CUSTOMER CARE</h3>
+            <p>Call: 022-6805-1234
+            <p>(Monday to Friday : 9 AM - 7 PM).</p>
+            </p>
+            <p>MAIL: crew@fabbabg.com</p>
+            <br>
+            <div id="logo1">
+                <div id="innerdiv">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+
+
+                <P>Copyright © 2021 fabbag.com All rights reserved.</P>
+            </div>
+        </div>
+        <div>
+            <h3>NEWSLETTER</h3>
+            <div id="subscribe">
+                <input type="text" placeholder="Enter your Email;" name="search" />
+                <button type="submit"> SUBSCRIBE</button>
+            </div>
+
+            <p>Don’t worry we don’t spam</p>
+        </div>
+
+
+    </div>
+    <script>
+       
+        imageZoom("myimage", "myresult");
+    </script>
+
+
+</body>
+
+</html>
