@@ -24,7 +24,7 @@ HTML, CSS, JAVASCRIPT
 
 ## Screenshots 📷
 
-![App Screenshot](https://imgur.com/fz9oF44)
+![App Screenshot](https://imgur.com/EK3WEPk.png)
 
 
 
