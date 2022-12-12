@@ -12,11 +12,11 @@ India's largest beauty subscription service. Receive amazing sample/full-size pr
 
 - Cart
 
-- Filter
+- Checkout
 
 - Payment
 
-- Sign Up, LocalStorage,
+- Sign Up, Login ,LocalStorage,
 
 ## Tech Stack 💻
 
@@ -26,5 +26,26 @@ HTML, CSS, JAVASCRIPT
 
 ![App Screenshot](https://imgur.com/fz9oF44.png)
 
+![App Screenshot](https://imgur.com/lGM8mt1.png)
 
+![App Screenshot](https://imgur.com/iBWrD9J.png)
 
+#### Product Gallery:
+
+![App Screenshot](https://imgur.com/yHN0lRW.png)
+
+#### Social Sign-in/Sign-up:
+
+![App Screenshot](https://imgur.com/xPzn33J.png)
+
+![App Screenshot](https://imgur.com/m1uHPGm.png)
+
+#### Cart page:
+
+![App Screenshot](https://imgur.com/PlyFOnk.png)
+
+#### Payment & checkout page:
+
+![App Screenshot](https://imgur.com/xcvVW7S.png)
+
+___________________________________________________________________________________________________________________________________________________________________
